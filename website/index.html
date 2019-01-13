@@ -1,0 +1,110 @@
+<!-- Input of day's wardrobe items worn -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wardrobe Tracking</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <!-- <link rel="stylesheet" href="css/header.css" type="text/css" media="screen"> -->
+    <!-- <link rel="stylesheet" href="css/body.css" type="text/css" media="screen"> -->
+    <!-- <link rel="stylesheet" href="css/footer.css" type="text/css" media="screen"> -->
+    <!-- <link rel="stylesheet" href="css/text.css" type="text/css" media="screen"> -->
+    <!-- <link rel="stylesheet" href="css/form.css" type="text/css" media="screen"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/link.css" type="text/css" media="screen"> -->
+  </head>
+  <body>
+    <!-- <?php define ('APPROOT', realpath(dirname(__FILE__))); ?>
+    <?php include('includes/header.php'); ?> -->
+
+    <!-- BEGINNING OF HEADER WITH NAV BAR -->
+    <!-- END OF HEADER WITH NAV BAR -->
+
+    <!-- BEGINNING OF MAIN PAGE CONTENT -->
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <h2 align='center'>Wardrobe Tracker</h2>
+
+      <div class="col-sm-3">
+        <h3>Input outfit</h3>
+        <div class="input-line" id="date">
+          <div class="col-sm-3 input-label" align="left">Date</div>
+          <!-- <div class="col-sm-9 input-response">November 5, 2019</div> -->
+          <div class="col-sm-9 input-response"><input type="date" name="wardrobe-date" id = "wardrobe-date"></div>
+          <!-- TODO: Date should auto populate to today, but be selectable from
+          calendar pop up AND typeable input of alternate options -->
+          <!-- TODO: If a date is selected which already has an outfit, that outfit
+          along with the rest of the associated data (imagery and stats)
+          should populate (assuming the user wants to update the outfit) -->
+        </div>
+        <div class="input-line" id="outfit">
+          <div class="col-sm-3 input-label" align="left">Outfit</div>
+          <div class="col-sm-9 input-response">Maroon Doloman Shirt, Black Levis
+            Jeans, Olive Green Columbia Rain Jacket</div>
+          <!-- TODO: Make outfit inputs be a text area which includes a series
+          of tags. Comma separated and semicolon separated. "Enter" should not
+          separate tags b/c it should be reserved for submitting the form -->
+        </div>
+        <div class="input-line" id="purpose">
+          <div class="col-sm-3 input-label" align="left">Purpose</div>
+          <div class="col-sm-9 input-response">Work</div>
+          <!-- TODO: Make outfit inputs be a drop down? but also type-able? -->
+        </div>
+        <div class="input-line" id="activity">
+          <div class="col-sm-3 input-label" align="left">Day's activity</div>
+          <div class="col-sm-9 input-response">Basic Spring work day, but with a
+            client meeting. Client is uptight, so had to dress up. Also b/c of
+            lunch meeting (going out), had to include nice blazer for dual warmth
+            and professionalism.</div>
+          <!-- TODO: Short answer response, text area -->
+        </div>
+
+
+        You might be missing socks and shoes today. <!--Little subtitle warning/note, INTERACTIVE -->
+        <!-- Maybe a suggestion for the missing shoes:  Black Timberland Sneaker Shoes -->
+        <!-- Separate section for undergarments? -->
+        <!-- Separate section for accessories? -->
+        <div>Button to submit</div>
+        <!-- TODO: MAKE ENTER BUTTON ALSO EDIT. OR MAKE TWO BUTTONS?
+        ONE FOR SUBMIT/MODIFY, AND
+        ONE FOR ADD (IN THE CASE THERE ARE TWO OUTFITS WORN ON THE SAME DAY) -->
+      </div>
+
+      <div class="col-sm-3">
+        <h3 align='center'>Outfit mood board</h3>
+        <img src=""></img>
+        <!-- Several images of all the items in the database,
+          arranged into a copy-able mood board? -->
+      </div>
+
+      <div class="col-sm-6">
+        <h3 align='center'>Today's outfit stats</h3>
+        <!-- Bar chart
+              - Each row is an item, ordered by head to toe?
+                Or greatest cost effectiveness? Or total # of uses so far?
+              - Left side label includes item name and image
+              - Bar data: # of wears out of # of wears to reach cost effectiveness
+                of < $1 per wear?
+        -->
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <!-- END OF MAIN PAGE CONTENT -->
+
+    <!-- BEGINNING OF FOOTER CONTENT -->
+    <!-- END OF FOOTER CONTENT -->
+
+    <!-- BEGINNING OF JS SCRIPTS TO INCLUDE -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v4.js"></script>
+    <script src="js/input-helpers.js"></script>
+    <!-- END OF JS SCRIPTS TO INCLUDE -->
+
+  </body>
+</html>
+
+
+<!-- <?php include('includes/footer.php'); ?> -->

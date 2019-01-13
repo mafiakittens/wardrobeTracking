@@ -1,0 +1,12 @@
+/* Styling for web interface */
+.input-line{
+  margin-bottom: 10px;
+  /* TODO: make sure margin-bottom works both in mobile and full screen */
+
+}
+.input-label{
+  padding:0;
+}
+.input-response{
+  padding:0;
+}
